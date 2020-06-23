@@ -7,13 +7,11 @@ import os
 from random import randint
 
 import vk_api
-from dotenv import load_dotenv
 from vk_api.bot_longpoll import VkBotLongPoll, VkBotEventType
 
 # # Настройка окружения
-load_dotenv()
-GROUP_NUMBER = os.getenv('GROUP_NUMBER')
-TOKEN_API_VK = os.getenv('TOKEN_API_VK')
+GROUP_NUMBER = os.environ['GROUP_NUMBER']
+TOKEN_API_VK = os.environ['TOKEN_API_VK']
 
 
 class Bot:
